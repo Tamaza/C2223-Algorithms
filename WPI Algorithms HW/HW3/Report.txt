@@ -1,0 +1,54 @@
+Report Iraki Grigolia
+
+
+In this program I implemented two functions topdown and bottomup to solve the cut rod problem.To run this program just press f5  it will  print out solutions and pieces used for the lists
+that were given to us originally and will show you the interface.In the interface it asks you to press "enter" if you want  to continue or to press "q" if you want to exit from the program.
+If you press enter,it will ask you whether you want to use list which is called "price1" or list "price2" , or if you want to go through both lists and print out solutions for all n.
+If you choose "price1" or "price2" it than asks you to choose what size of rod you want to cut.
+
+My functions print out the optimal price and the pieces used.For  pieces used  it prints outs the array where the numbers represent the number of times the  piece was used,so for
+example if the list given is [3,5,8,9,10,17,17,18] and the  answer is [8,0,0,0,0,0,0]  it means that the first item in the list was used 8 times ,so in this situation  a rod was cut into
+8 pieces and price of each piece was 3.
+
+
+
+Table1 shows time complexity of two functions on 2 different lists.Time complexity of this 2 fucntions is O(n^2) as you can see from the table2 and from the statistics of table1:
+Space complexity is  O(n) because both functions use a space equal to the length of the rod.
+
+
+table1:
+
+                               Pricelist1:                                                             Pricelist2:
+
+size(n)        topdown                        bottomup                                  topdown                      bottomup      
+
+1            0.02309870803898201             0.05124739806315249                    0.013446561650769386        0.01687812797663763
+ 
+2            0.02681326006823748             0.025663448312077806                   0.010659006603485975        0.015514253581446641  
+
+3            0.023444417377656093            0.02677861619991044                    0.020261192886848023        0.03478062043886122
+
+4            0.012020328292589713            0.02648614901677055                    0.031226524220804703        0.04565697173206214
+
+5            0.023605967205749572            0.025144884304066674                   0.024209864531534675        0.04090128029150446
+ 
+6            0.02109592777738069             0.04413884095474126                    0.020585386559929517        0.03627723555058953
+
+7            0.013588783847059355            0.019911107480595786                   0.023871083966526003        0.03516863176412413
+
+8            0.01358659581327028             0.02968943048397849                    0.02021123278199744         0.04451080669888424 
+
+
+
+table2:
+
+
+            topdown                          bottomup
+
+
+
+time        O(n^2)                            O(n^2)
+
+
+
+space       O(n)                              O(n)
