@@ -1,0 +1,31 @@
+HP
+
+init O(nlogn) where n is a size of a samplelist
+
+HP
+
+enQueue O(logn) where n is number of elements in a heap
+
+HP
+
+dequeue O(logn) where n is number of elements in a heap
+
+HP
+
+sneekAPeek O(1)
+
+List
+
+init O(n)  where n is number of elements in a list
+
+List
+
+enQueue O(1) 
+
+List
+
+deQueue O(n) where n is number of elements in a list
+
+List
+
+sneekAPeek O(n) where n is number of elements in a list
