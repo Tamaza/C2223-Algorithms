@@ -1,0 +1,40 @@
+//HW2 by Irakli Grigolia
+
+
+First table shows times in seconds  after using three different sorts on 6 different lists.
+Second table shows order of growth in Big O notation for time and space of 3 different sorts.
+Third table shows times in seconds after using quick sort but with 3-way partition method and using insertion sort for lists that are less or equal to 10.
+
+
+Out of these 3 sorts merge sort is the most efficient as we can see from the table ,its worst,best,and average case is always O(nlogn);after merge sort quick sort and bubble sort are
+pretty much the same time-wise ,they both have worst case O(n^2),but if we implement quick sort with three-way partion ,its best-case becomes O(n)
+
+table1: 
+           order10                     reverse10                  random10                   order50                   reverse50                       random50
+qS   1.7868929578182535e-05     2.4797698190137663e-05   3.0267778673244428e-05       0.00017504257545976343     0.00017613659155638062        7.439309457039911e-05
+
+mS   2.2609665996889405e-05     3.2455810866492685e-05   2.406835412571695e-05        0.00012654119517611917     0.00014586881288312925        0.0001476921730441741
+ 
+bS   1.2763521127272248e-05     2.6256386318965208e-05   1.7139585513768762e-05       0.00015097422133404648     0.0006265065513330614         0.00032309942053614094
+
+
+table2:
+
+space is O(n) for all three of them
+ 
+       bestcase     			    worstcase        averagecase
+qS     O(n) three way partition 	    O(n^2) 	     O(n log n) 
+       O(n log n) simple partition         
+
+mS     O(n log n)   			    O(n log n)       O(n log n) 
+
+bS     O(n)	    			    O(n^2)            O(n^2)
+
+
+table3: 
+           order10                     reverse10                  random10                   order50                   reverse50                       random50
+
+vqS      2.8444418512213465e-05       2.91737625766203e-05      3.0632450705447845e-05      0.0002895495935730241     0.00016410241449353602         0.00013966938833559484
+
+
+vmS      9.116800805196446e-06       1.4222209256106733e-05    8.022784708572317e-06        0.0001710311831054634      0.0002188032193247147          0.00019874625755327002
