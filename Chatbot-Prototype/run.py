@@ -281,7 +281,7 @@ def check_message(event, api, vk_session):
             user.level = "2,1,2"
             user.save()
             return True
-    # Запись на приём
+    # setting up an appointment
     elif user.level == "3,0,0":
         message = f"👋Hello friend, {user_info['first_name']}! come visit us"
         keyboard = to_kb("Set an appointment")
