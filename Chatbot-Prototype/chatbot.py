@@ -35,7 +35,7 @@ def save_excel():
     ws['D1'] = "Gender"
     ws['E1'] = "Contact"
     ws['F1'] = "Did some magic"
-    ws['G1'] = "Запись на приём"
+    ws['G1'] = "Set an appointment"
 
     for i, user in enumerate(users):
         ws['A' + str(2 + i)] = user.user_id
@@ -281,7 +281,7 @@ def check_message(event, api, vk_session):
             user.level = "2,1,2"
             user.save()
             return True
-    # setting up an appointment
+    # Запись на приём
     elif user.level == "3,0,0":
         message = f"👋Hello friend, {user_info['first_name']}! come visit us"
         keyboard = to_kb("Set an appointment")
