@@ -1,0 +1,4 @@
+left_Jab = 210
+right_jab = 130
+uppercut = 150
+hook = 150
