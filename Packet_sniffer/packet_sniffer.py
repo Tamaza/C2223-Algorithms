@@ -1,4 +1,4 @@
-import scappy.all as scapy
+import scapy.all as scapy
 from scapy.layers import http
 
 def sniff(interface):
