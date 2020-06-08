@@ -1,4 +1,4 @@
-import scappy.all as scapy
+import scapy.all as scapy
 import sys
 
 # getting the mac address  using ip
